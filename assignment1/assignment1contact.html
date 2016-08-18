@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="name"><h1>Edouard Batll<char>&#233</char></h1></div>
+	<div class="infobar">
+		<a href="assignment1index.html" class="me">About</a>
+		<a href="assignment1portfolio.html" class="portfolio">Portfolio</a>
+		<a href="assignment1contact.html" class="contact">Contact</a>
+	</div>
+	<div class="container">
+		<div class="greyline"></div>
+		<div class="about">
+			<h1>Contact</h1>
+			<hr>
+			<form action="contact-form-handler.php" method="post" name="contact_form">
+				Name:<br>
+				<input type="text" name="name" placeholder="Arthur Dent"><br>
+				Email:<br>
+				<input type="text" name="email" placeholder="ad42@nofixedabode.com"><br>
+				Message:<br>
+				<textarea name="message" class="message" placeholder="Vogons have destroyed the earth, gone to find tea and a towel."></textarea><br>
+				<br>
+				<input type="submit" value="Submit">
+			</form>
+			<script language="JavaScript">
+				bar frmvalidator = new Validator("contactform");
+				frmvalidator.addValidation("name", "req", "Please provide your name");
+				frmvalidator.addValidation("email", "req", "Please provide your email");
+				frmvalidator.addValidation("email","email", "Please enter a valid email address");
+			</script>
+		</div>	
+		<div class="connect">
+			<h2>Connect With Me</h2>
+			<hr>
+			<a href="https://github.com/bernerd252" target="_blank"><img src="https://raw.githubusercontent.com/bernerd252/Basic-Portfolio/master/assets/images/github.png" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/Basic-Portfolio/master/assets/images/githubhover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/Basic-Portfolio/master/assets/images/github.png';"/></a>
+			<a href="https://www.linkedin.com/in/edouard-batlle-881727b6?trk=nav_responsive_tab_profile" target="_blank"><img src="https://raw.githubusercontent.com/bernerd252/Basic-Portfolio/master/assets/images/linkedin.png" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/Basic-Portfolio/master/assets/images/linkedinhover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/Basic-Portfolio/master/assets/images/linkedin.png';"/></a>
+			<a href="http://stackoverflow.com/users/6691663/edouard-batlle" target="_blank"><img src="https://raw.githubusercontent.com/bernerd252/Basic-Portfolio/master/assets/images/stackoverflow.png" onmouseover="this.src='https://raw.githubusercontent.com/bernerd252/Basic-Portfolio/master/assets/images/stackoverflowhover.png';" onmouseout="this.src='https://raw.githubusercontent.com/bernerd252/Basic-Portfolio/master/assets/images/stackoverflow.png';"/></a>
+		</div>
+	</div>
+	<div class="blueline"></div>
+	<div class="footer"><char>&#169</char>2016 Edouard Batll<char>&#233</char></div>
+</body>
+</html>
